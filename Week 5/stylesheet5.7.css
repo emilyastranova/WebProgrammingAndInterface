@@ -1,0 +1,20 @@
+#background {
+  width: 500px;
+  height: 500px;
+  padding: 5px 20px;
+  text-align: center;
+
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    color-stop(14%, red),
+    color-stop(28%, orange),
+    color-stop(42%, yellow)
+    color-stop(56%, green)
+    color-stop(70%, blue)
+    color-stop(84%, indigo)
+  );
+  background: -moz-linear-gradient(top left, red 14%, orange 28%, yellow 42%, green 56%, blue 70%, indigo 84%);
+  background: linear-gradient(45deg, red 14%, orange 28%, yellow 42%, green 56%, blue 70%, indigo 84%);
+}

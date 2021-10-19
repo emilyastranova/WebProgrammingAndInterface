@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<!--
+--------------------------------------
+|                                    |
+|            Tyler Harrison          |
+|     Texas A&M - Commerce (RELLIS)  |
+|        2021-2022 Academic Year     |
+|                                    |
+--------------------------------------
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>7.15</title>
+  </head>
+  <body>
+    <div id="output"></div>
+    <div>
+      <script type="text/javascript">
+        var largest = 0;
+        for (let counter = 0; counter < 10; counter++) {
+          number = parseInt(prompt("Please enter units sold"));
+          if (number > largest) largest = number;
+        }
+        document.getElementById("output").innerHTML = "Largest: " + largest;
+      </script>
+    </div>
+  </body>
+</html>

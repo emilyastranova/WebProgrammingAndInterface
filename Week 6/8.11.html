@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<!--
+--------------------------------------
+|                                    |
+|            Tyler Harrison          |
+|     Texas A&M - Commerce (RELLIS)  |
+|        2021-2022 Academic Year     |
+|                                    |
+--------------------------------------
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>8.11</title>
+  </head>
+  <body>
+    <div id="output"></div>
+    <div>
+      <script type="text/javascript">
+        var total = 0;
+        var number = 0;
+        var quantity;
+        while (number >= 0) {
+          number = parseInt(prompt("Enter product number (-1 to quit)"));
+          if (number >= 0) {
+            quantity = parseInt(prompt("Enter quantity sold"));
+            switch (number) {
+              case 1:
+                total += 2.98 * quantity;
+                break;
+              case 2:
+                total += 4.5 * quantity;
+                break;
+              case 3:
+                total += 9.98 * quantity;
+                break;
+              case 4:
+                total += 4.49 * quantity;
+                break;
+              case 5:
+                total += 6.87 * quantity;
+                break;
+            }
+          }
+        }
+        document.getElementById("output").innerHTML = "Total: " + total;
+      </script>
+    </div>
+  </body>
+</html>

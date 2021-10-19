@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<!--
+--------------------------------------
+|                                    |
+|            Tyler Harrison          |
+|     Texas A&M - Commerce (RELLIS)  |
+|        2021-2022 Academic Year     |
+|                                    |
+--------------------------------------
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>6.17</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      num1 = parseInt(window.prompt("Input first number"));
+      num2 = parseInt(window.prompt("Input second number"));
+      isLarger = num1 > num2;
+      document.write('<pre> <h1>');
+      if(isLarger)
+        document.writeln(num1 +" is larger than " + num2);
+      else if(num1 === num2)
+        document.writeln("These numbers are equal");
+      else
+        document.writeln(num2 +" is larger than " + num1);
+      document.writeln("</h1>");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<!--
+--------------------------------------
+|                                    |
+|            Tyler Harrison          |
+|     Texas A&M - Commerce (RELLIS)  |
+|        2021-2022 Academic Year     |
+|                                    |
+--------------------------------------
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>7.14</title>
+  </head>
+  <body>
+    <div id="output"></div>
+    <script type="text/javascript">
+      var numHours = parseInt(prompt("Please enter number of hours"));
+      var numPayrate = parseInt(prompt("Please enter dollars per hour"));
+      var numOvertime = 0;
+      if(numHours > 40)
+        numOvertime = numHours - 40
+
+      grossPay = ((numHours - numOvertime) * numPayrate) + (numOvertime * numPayrate * 1.5)
+
+      if (numHours != null) {
+        document.getElementById("output").innerHTML =
+          "Gross Pay: " + grossPay;
+      }
+    </script>
+  </body>
+</html>

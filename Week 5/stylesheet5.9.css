@@ -1,0 +1,34 @@
+#object
+{
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  position: relative;
+  -webkit-animation: movingImage linear 10s 1s 2 forwards;
+  -moz-animation: movingImage linear 10s 1s 2 forwards;
+  animation: movingImage linear 10s 2 1s forwards;
+}
+@-webkit-keyframes movingImage
+{
+  0% {opacity: 1; left: 100px; top: 0px;}
+  25% {opacity: 1; left: 0px; top: 0px;}
+  50% {opacity: 1; left: 0px; top: 100px;}
+  75% {opacity: 1; left: 100px; top: 100px;}
+  100% {opacity: 1; left: 100px; top: 0px;}
+}
+@-moz-keyframes movingImage
+{
+  0% {opacity: 1; left: 100px; top: 0px;}
+  25% {opacity: 1; left: 0px; top: 0px;}
+  50% {opacity: 1; left: 0px; top: 100px;}
+  75% {opacity: 1; left: 100px; top: 100px;}
+  100% {opacity: 1; left: 100px; top: 0px;}
+}
+@keyframes movingImage
+{
+  0% {opacity: 1; left: 100px; top: 0px;}
+  25% {opacity: 1; left: 0px; top: 0px;}
+  50% {opacity: 1; left: 0px; top: 100px;}
+  75% {opacity: 1; left: 100px; top: 100px;}
+  100% {opacity: 1; left: 100px; top: 0px;}
+}
