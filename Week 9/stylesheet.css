@@ -1,0 +1,21 @@
+/* Nice table shading */
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+/* Outline images in black border */
+img {
+    border: 2px solid black;
+}
+/* Make h1 font arial */
+h1 {
+    font-family: arial;
+}
